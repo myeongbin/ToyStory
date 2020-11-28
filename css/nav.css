@@ -1,0 +1,151 @@
+/* NOMALRIZE */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+.alt-txt{font-size: 0; color: transparent; text-indent: -9999px;}
+html{margin: 0; padding: 0; font-size: 20px;}
+
+/* HEADER */
+
+header{
+    position: fixed; z-index: 9999;
+    width: 100%; height: 80px;
+    margin-top: 40px;
+    margin-left: auto; margin-right: auto;
+}
+header h1{width: 120px; margin-left: 3%;}
+header h1 a img{}
+header h1:hover a img{width: 110%; transition: 2s ease;}
+
+/* NAVIGATION */
+.menu-open{
+    position: fixed; top: 1rem; z-index: 1000;
+    width: 80px; height: 100px; cursor: pointer;
+}
+.menu-open{
+    background: url('../images/menu.png') no-repeat; background-size: 100%;
+    background-position: center; top: 0; right: 0; 
+    margin-top: 40px; margin-right: 3%;
+    width: 60px; height: 70px; 
+}
+.menu-open:hover{
+    background: url('../images/menu-hover.png') no-repeat; background-size: 100%;
+    background-position: center; top: 0; right: 0;
+    width: 60px; height: 60px; 
+    transform: rotate3d(0, 90, 0, 180deg);
+    transition: 1s;
+	transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+header h2{
+    position: fixed; z-index: 999; color: #FFF; top: 60px; left: 48%;
+    font-family: 'Carter One', cursive; font-size: 1.7rem;
+    text-align: center;
+}
+nav{
+    position: fixed; top: 0; right: -40%;
+    width: 40%; height: 100%; z-index: 1000;
+    background-color: #0d0d89; border-left: #FFF solid 1px;
+    transition: 0.5s; 
+}
+nav.active{
+    position: fixed; top: 0; right: 0;
+    width: 40%; height: 100%; z-index: 1000;
+    background-color: #0d0d89; border-left: #FFF solid 1px;
+    transition: 0.5s; box-shadow: 0 -10px 30px #000;
+}
+nav ul{
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 100%; text-align: center; 
+}
+nav ul li{
+    margin-top: 2rem; list-style: none; position: relative;
+}
+nav ul li a{
+    color: #FFF; text-decoration: none; 
+    z-index: 9999;
+    /* position: relative; */
+    font-family: 'Carter One', cursive; font-size: 3rem;
+}
+nav ul li span{
+    position: absolute; z-index: -1; visibility: hidden;
+    -webkit-animation: floating-animation 3s ease-in-out infinite;
+    -o-animation: floating-animation 3s ease-in-out infinite;
+    animation: floating-animation 3s ease-in-out infinite;
+}
+
+nav ul li a:hover span{
+    /* a 태그를  hover 시 span 요소들이  보이도록함 */
+    visibility: visible; transition: 0.7s;
+}
+
+/* hover span 위치 지정 */
+nav ul li span:first-child{
+    left: 170px; top: -30px;
+}
+nav ul li span:nth-child(2){
+    right: 150px; top: -30px;
+}
+nav ul li span:last-child{
+    right: 200px; bottom: -50px;
+}
+
+/* floating 애니메이션 값 지정 */
+@keyframes floating-animation{
+    0%{
+        -webkit-transform: translateY(0) rotateY(0deg);
+        -moz-transform: translateY(0) rotateY(0deg);
+        -ms-transform: translateY(0) rotateY(0deg);
+        -o-transform: translateY(0) rotateY(0deg);
+        transform: translateY(0) rotateY(0deg);
+    }
+    50%{
+        -webkit-transform: translateY(-15px) rotateY(180deg);
+        -moz-transform: translateY(-15px) rotateY(180deg);
+        -ms-transform: translateY(-15px) rotateY(180deg);
+        -o-transform: translateY(-15px) rotateY(180deg);
+        transform: translateY(-15px) rotateY(180deg);
+    }
+    100%{
+        -webkit-transform: translateY(0) rotateY(0deg);
+        -moz-transform: translateY(0) rotateY(0deg);
+        -ms-transform: translateY(0) rotateY(0deg);
+        -o-transform: translateY(0) rotateY(0deg);
+        transform: translateY(0) rotateY(0deg);
+    }
+}
+
+nav ul li:first-child a:hover{
+    -webkit-text-stroke: 2px #ffd800; color: #0d0d89;
+    transition: 0.3s;
+}
+nav ul li:nth-child(2) a:hover{
+    -webkit-text-stroke: 2px #00eb0b; color: #0d0d89;
+    transition: 0.3s;
+}
+nav ul li:nth-child(3) a:hover{
+    -webkit-text-stroke: 2px #ff5ff6; color: #0d0d89;
+    transition: 0.3s;
+}
+nav ul li:last-child a:hover{
+    -webkit-text-stroke: 2px #ff0042; color: #0d0d89;
+    transition: 0.3s;
+}
+nav ul li::after a:hover{
+    content: ""; background:url('../images/nav-effect.png') no-repeat;
+    background-size: 100%; background-position: center;
+    width: 281px; height: 107px; 
+}
+.menu-close{
+    position: absolute; top: 0; right: 0;
+    margin-top: 40px; margin-right: 6.5%;
+    width: 60px; height: 60px; cursor: pointer;
+    background: url('../images/menu-active.png') no-repeat;
+    background-position: center; background-size: 100%;
+    transform: rotate3d(0, 90, 0, 180deg);
+    transition: 1s;
+	transform-style: preserve-3d;
+	transition-timing-function: cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}

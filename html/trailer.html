@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Trailer</title>
+        <link rel="stylesheet" href="../css/trailer.css" />
+        <link rel="stylesheet" href="../css/MouseCursor.css" />
+        <link rel="stylesheet" href="../css/nav.css" />
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <h1 class="logo">
+                    <a href="./main.html">
+                        <img src="../images/Logo.png" />
+                    </a>
+                </h1>
+                <div class="menu-open"></div>
+                <h2>Trailer</h2>
+                <nav class="nav">
+                    <div class="menu-close"></div>
+                    <ul>
+                        <li class="nav-link">
+                            <a href="./story.html">Story
+                                <span><img src="../images/nav_hover01.png"  /></span>
+                                <span><img src="../images/nav_hover02.png"  /></span>
+                                <span><img src="../images/nav_hover03.png"  /></span>
+                            </a>
+                            
+                        </li>
+                        <li class="nav-link">
+                            <a href="./toys_menu.html">Toys
+                                <span><img src="../images/nav_hover01.png"  /></span>
+                                <span><img src="../images/nav_hover02.png"  /></span>
+                                <span><img src="../images/nav_hover03.png"  /></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="./trailer.html">Trailer
+                                <span><img src="../images/nav_hover01.png"  /></span>
+                                <span><img src="../images/nav_hover02.png"  /></span>
+                                <span><img src="../images/nav_hover03.png"  /></span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="./album.html">Albums
+                                <span><img src="../images/nav_hover01.png"  /></span>
+                                <span><img src="../images/nav_hover02.png"  /></span>
+                                <span><img src="../images/nav_hover03.png"  /></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="Video" class="Video">
+                <div class="view">
+                    <div class="view-container">
+                        <div class="view-item t1">
+                            <img class="video_logo" src="../images/story-01-logo.png" />
+                            <div class="btn-item">
+                                <a href="https://www.youtube.com/watch?v=4pqDJZ0a9c4">Full Version</a>
+                            </div>
+                            <video src="../videos/trailer_01.mp4" autoplay loop muted></video>
+                        </div>
+                        <div class="view-item t2">
+                            <img class="video_logo" src="../images/story-02-logo.png" />
+                            <div class="btn-item">
+                                <a href="https://www.youtube.com/watch?v=65tNM3I2MZU">Full Version</a>
+                            </div>
+                            <video src="../videos/trailer_02.mp4" autoplay loop muted></video>
+                        </div>
+                        <div class="view-item t3">
+                            <img class="video_logo" src="../images/story-03-logo.png" />
+                            <div class="btn-item">
+                                <a href="https://www.youtube.com/watch?v=JcpWXaA2qeg">Full Version</a>
+                            </div>
+                            <video src="../videos/trailer_03.mp4" autoplay loop muted></video>
+                        </div>
+                        <div class="view-item t4">
+                            <img class="video_logo" src="../images/story-04-logo.png" />
+                            <div class="btn-item">
+                                <a href="https://www.youtube.com/watch?v=LDXYRzerjzU">Full Version</a>
+                            </div>
+                            <video src="../videos/trailer_04.mp4" autoplay loop muted></video>
+                        </div>
+                    </div>
+                </div>
+                <div class="paddle-nav">
+                    <ul>
+                        <li><button class="arrow prev"></button></li>
+                        <li><button class="arrow next"></button></li>
+                    </ul>
+                </div>
+                <div class="bottom-area">
+                    <div class="list-wrap">
+                        <ul class="list"><li class="selected" id="audio_play"><a href="#"><span>1</span><img src="../images/trailer01.jpg"></a></li><li><a href="#"><span>2</span><img src="../images/trailer02.jpg"></a></li><li><a href="#"><span>3</span><img src="../images/trailer03.jpg"></a></li><li><a href="#"><span>4</span><img src="../images/trailer04.jpg"></a></li></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Mouse Cursor -->
+        <div id="cursor-dot">&nbsp;</div>
+        <div id="cursor-bg">&nbsp;</div>
+        <div id="progress"><span>&nbsp;</span></div>
+
+        <!-- JAVASCRIPT ROAD -->
+        <script src="../js/ToggleMenu.js"></script>
+        <script src="../js/VideoGallery.js"></script>
+        <script src="../js/MouseCursor.js"></script>
+        <Script src="../vendor/gsap/gsap.min.js"></Script>
+        <!-- <script type="text/javascript"> 
+            function play() { 
+                var audioPlay = document.getElementById('audio_play'); 
+                if (audioPlay.paused) { 
+                    audioPlay.play(); 
+                }else{ 
+                    audioPlay.pause(); 
+                    audioPlay.currentTime = 0 
+                } 
+            } 
+        </script> -->
+    </body>
+</html>

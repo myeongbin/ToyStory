@@ -1,0 +1,136 @@
+/* NOMALRIZE */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; }
+html{margin: 0; padding: 0; width: 100%; height: 100%; font-size: 20px; overflow: hidden;}
+body{background-color: #0d0d89;}
+.alt-txt{font-size: 0; color: transparent; text-indent: -9999px;}
+
+/* MAIN VISUAL AREA */
+.main-visual{width: 100%; height: 100%; position: relative;}
+.main-visual .main-img{width: 100%;}
+.main-visual .main-img .front{ width: 77%; z-index: 3; left: 15%; top: 30%; position: absolute;}
+.main-visual .main-img .back{ padding: 0; width: 100%; top: 620px; position: relative;}
+.main-visual .title{
+    z-index: 2; position: absolute; left: 15%; top: 25%;
+    font-family: 'Carter One', cursive; font-size: 4.7rem;
+    text-align: center; color: #ffd800;
+}
+
+/* span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+    font-family: 'Carter One', cursive; letter-spacing: 5px;
+}
+span.fade{
+    opacity: 1; transform: translateY(0px);
+} */
+
+/* text_animation.js style */ 
+span{
+    transition: all 0.5s ease;
+    font-family: 'Carter One', cursive;
+}
+span.fade{
+    -webkit-animation: textAnimation 3s ease-in-out;
+    -o-animation: textAnimation 3s ease-in-out ;
+    animation: textAnimation 3s ease-in-out ;
+}
+
+@keyframes textAnimation{
+    0%{
+        color: #ffd800;
+    }
+    25%{
+        color: #00eb0b;
+    }
+    50%{
+        color: #ff5ff6;
+    }
+    75%{
+        color: #ff0042;
+    }
+    100%{
+        color: #ffd800;
+    }
+}
+
+.back-img{
+    background: url('../images/index-background') no-repeat center; background-size: cover;
+    width: 100%; height: 100%; min-height: 972px; position: absolute;
+    opacity: 0.3; top: 0; left: 0;
+    z-index: -9999;
+}
+.sphere{
+    z-index:1; position: absolute; width: 150px; height: 150px;
+    border-radius: 100%; filter: blur(7px);
+    -webkit-animation: Lighting 3s ease-in-out infinite;
+    -o-animation: Lighting 3s ease-in-out infinite;
+    animation: Lighting 3s ease-in-out infinite;
+}
+.s1{
+    top: -50%; left: 30%; width: 120px; height: 120px;
+    box-shadow: 2px 2px 30px#ffd800; background-color: #ffd800; 
+}
+.s2{
+    left: 80%; top: -30%; 
+    box-shadow: 2px 2px 30px#00eb0b; background-color: #00eb0b; 
+}
+.s3{ 
+    left: 70%; top: 50%; width: 180px; height: 180px;
+    box-shadow: 2px 2px 30px#ff0042; background-color: #ff0042; 
+    -webkit-animation: Lighting 5s ease-in-out infinite;
+    -o-animation: Lighting 5s ease-in-out infinite;
+    animation: Lighting 5s ease-in-out infinite;
+}
+.s4{
+    left: 5%; top: 40%; width: 200px; height: 200px;
+    box-shadow: 2px 2px 30px#ff5ff6; background-color: #ff5ff6; 
+    -webkit-animation: Lighting 2s ease-in-out infinite;
+    -o-animation: Lighting 2s ease-in-out infinite;
+    animation: Lighting 2s ease-in-out infinite;
+}
+.s5{
+    left: 68%; top: 50%; width: 80px; height: 80px;
+    box-shadow: 2px 2px 30px#00eb0b; background-color: #00eb0b;
+}
+
+@keyframes Lighting{
+    0%{
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.4;
+    }
+    100%{
+        opacity: 0.1;
+    }
+}
+
+.SNS-area{z-index: 9999; position: absolute; margin-left: 3%; top: 30%;}
+.SNS-area ul{margin-left: 3%;}
+.SNS-area ul li{list-style: none; padding-bottom: 30px;}
+.SNS-area ul li a{color: #FFF; text-decoration: none;}
+.SNS-area ul li a .icon{
+    background:url('../images/icon-sns') no-repeat;
+    background-size: 39px 234px; width: 40px; height: 35px; 
+    display: inline-block; vertical-align: middle;
+}
+.SNS-area ul li a .ic2{background-position: 0 -70px;}
+.SNS-area ul li a .ic3{background-position: 0 -138px;}
+.SNS-area ul li a .ic4{background-position: 0 -207px;}
+.SNS-area ul li a span{}
+.SNS-area ul li a:hover span{
+    border: 1px solid #FFF; 
+    width: 165px; height: 37px;
+    transition: 0.5s ease-in-out;
+}
+/* .SNS-area ul li:hover .ic2 .ic3 .ic4{opacity: 0.3;} */
+.SNS-area ul li a:hover .ic1::after{content: "facebook"; margin-left:60px; transition: 1s;}
+.SNS-area ul li a:hover .ic2::after{content: "tweeter"; margin-left:60px; transition: 1s;}
+.SNS-area ul li a:hover .ic3::after{content: "instargram"; margin-left:60px; transition: 1s;}
+.SNS-area ul li a:hover .ic4::after{content: "youtube"; margin-left:60px; transition: 1s;}

@@ -1,0 +1,88 @@
+/* NOMARLIZE */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif; }
+html{margin: 0; padding: 0; width: 100%; height: 100%; font-size: 20px;}
+body{background-color: #0d0d89;}
+
+
+/* Andy's Toys */
+
+/* SECTION */
+section{width: 100%; height: 100%; clear: both;}
+section .s1{ overflow: hidden; }
+section .s2{}
+section .s3{}
+section .s4{overflow: hidden;}
+
+section .background{
+    width: 100%; height: 100%; min-height: 972px;
+    opacity: 0.3; position: relative; z-index: -9999;
+}
+section .left-items{margin-left: 7%; width: 800px; margin-right: 0; position: absolute;}
+.s1 .left-items{top: 20%;}
+.s2 .left-items{top: 120%;}
+.s3 .left-items{top: 220%;}
+.s4 .left-items{top: 320%;}
+
+section .left-items .txt-area{color: #FFF; margin-bottom: 30px;}
+section .left-items .txt-area h2{font-family: 'Carter One', cursive; font-size: 5rem; letter-spacing: 0.3rem;}
+section.s1 .txt-area h2{color: #ffd800;}
+section.s2 .txt-area h2{color: #00eb0b;}
+section.s3 .txt-area h2{color: #ff5ff6;}
+section.s4 .txt-area h2{color: #ff0042;}
+section .left-items .txt-area .speech{font-family: 'Permanent Marker', cursive; font-size: 2rem; margin-bottom: 18px;}
+section .left-items .txt-area .txt{width:530px; height: 235px; overflow: scroll; font-weight: 200;}
+section .left-items .txt-area .txt .KR{margin-bottom: 18px;}
+section .left-items .txt-area .txt .EN{}
+div.txt-area .txt::-webkit-scrollbar{width: 10px;}
+div.txt-area .txt::-webkit-scrollbar-thumb{background-color: #FFF; border-radius: 10px;}
+
+section .left-items .more{clear: both;}
+section .left-items .more ul{display: flex;  overflow: hidden;}
+section .left-items .more ul li{padding-right: 30px; vertical-align: middle; list-style: none;  }
+section .left-items .more ul li img{}
+section.s1 .more ul li img{border: 3px solid #ffd800; }
+section.s2 .more ul li img{border: 3px solid #00eb0b; }
+section.s3 .more ul li img{border: 3px solid #ff5ff6; }
+section.s4 .more ul li img{border: 3px solid #ff0042; }
+section .left-items .more ul li a{}
+section .left-items .more ul li a .btn{}
+section.s1 .more ul li a .btn{
+    width: 0; height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #ffd800;
+    border-bottom: 30px solid transparent;
+}
+section.s2 .more ul li a .btn{
+    width: 0; height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #00eb0b;
+    border-bottom: 30px solid transparent;
+}
+section.s3 .more ul li a .btn{
+    width: 0; height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #ff5ff6;
+    border-bottom: 30px solid transparent;
+}
+section.s4 .more ul li a .btn{
+    width: 0; height: 0;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #ff0042;
+    border-bottom: 30px solid transparent;
+}
+
+section .cast-img{ float: right; position: absolute; left: 35%; overflow: hidden;}
+section .cast-img .cast{position: absolute; right: 20%; width: 50%; overflow: hidden;}
+section .cast-img .shape{position: relative; z-index: -1; left: 20%; width: 85%; clear: both; overflow: hidden;}
+/* section.s1 .cast-img .shape{ width: 70%; left: 50%; overflow: hidden; } */
+section.s1 .cast-img{ top: 9%; width: 68%;}
+section.s1 .cast-img .shape{left: 25%; width: 79%;}
+section.s2 .cast-img{ top: 118%; width: 93%; left: 25%;}
+section.s2 .cast-img .shape{left: 10%; width:80%;}
+section.s3 .cast-img{width: 91%; top: 205%; left: 23%;}
+section.s3 .cast-img .shape{ width: 70%; margin-top: 120px;}
+section.s4 .cast-img {top: 318%; width: 75%; left: 30%;}
+section.s4 .cast-img .shape{ width: 85%; left: 15%;;}

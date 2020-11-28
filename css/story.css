@@ -1,0 +1,69 @@
+/* NOMALRIZE */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+*{margin: 0; padding: 0; font-family: 'Noto Sans KR', sans-serif;}
+.alt-txt{font-size: 0; color: transparent; text-indent: -9999px;}
+html{
+    background-color: #0d0d89; width: 100%; height: 100%; 
+    min-width: 1080px; min-height: 972px; 
+    font-size: 20px;
+}
+
+/* LAYOUT */
+#wrap{width: 100%; height: 100%;}
+
+/* nav */
+header .story-nav{position: fixed; top: 0; margin-top: 3%; left: 35%;}
+header .story-nav ul{ display: flex; justify-content: center; align-items: center; clear: both;}
+header .story-nav ul li{list-style: none; padding: 0 15px; overflow: hidden;}
+header .story-nav ul li a{color: #FFF; font-size:0.8rem; font-weight: 300; text-decoration: none;}
+header .story-nav ul li:hover a{
+    color:#ffd800; font-size: 1rem; font-weight: 500; transition: 0.7s;
+}
+
+/* section */
+section{width: 100%; height: 100%; padding: 0; margin: 0;}
+
+.s1{
+    text-align: center; padding-top: 8%; width: 100%; height: 100%;
+    background: url('../images/synopsis-backimg') no-repeat; 
+    background-size: cover; background-position: center; opacity: 0.8;
+}
+.s1 .txt{z-index: 999;}
+.s1 .txt dl{color: #FFF;}
+.s1 .txt dl dt{color: #ffd800; font-family: 'Carter One', cursive; font-size: 4rem; margin-bottom: 35px;}
+.s1 .txt dl dd{ 
+    width: 54%; margin-left: auto; margin-right: auto; 
+    font-size: 1rem; font-weight: 200; line-height: 1.7rem;
+}
+.s1 .txt dl dd.sub-title{font-family: 'Permanent Marker', cursive; font-size: 1.5rem; font-weight: 400; padding-bottom: 15px;}
+.s1 .txt dl .KR{padding-bottom: 12px;}
+.s1 .txt dl .EN{}
+.s1 img{width:70%;}
+
+.s2 .txt-area{
+    position: absolute;
+}
+.s3 .txt-area{
+    position: absolute;
+}
+.s4 .txt-area{
+    position: absolute;
+}
+.s5 .txt-area{
+    position: absolute;
+}
+.background{
+    width: 100%; height: 100%; min-height: 972px;
+    overflow: hidden; position: relative; z-index:-999; 
+    opacity: 0.8; top: 0; left: 0;
+}
+
+.right{float: right; width: 35%; margin-right: 7%; padding-top: 10%;}
+.right img{margin-left: 25%; padding-bottom: 10%;}
+.left{width: 35%; margin-left: 7%; padding-top: 10%;}
+.left img{margin-left: 20%; padding-bottom: 10%;}
+.txt-area .txt{font-weight: 300; color: #FFF; font-size: 1rem;}
+.txt p:first-child{font-weight: 500; margin-bottom: 20px; font-size: 1.3rem;}
